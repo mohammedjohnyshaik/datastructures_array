@@ -1,0 +1,16 @@
+class Solution(object):
+    def __init__(self):
+        self.nums = input("nums")
+        self.nums = list(map(int, self.nums.split()))
+        self.target = int(input("Target: "))
+
+    def twoSum(self, nums, target):
+        for i in range(len(nums)):
+            for j in range(i + 1, len(nums)):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+        return []
+
+sol = Solution()
+result = sol.twoSum(sol.nums, sol.target)
+print(result)
