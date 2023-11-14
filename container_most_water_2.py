@@ -9,8 +9,8 @@ class Solution:
                 area = h * w
                 max_area = max(max_area, area)
         return max_area
-
 solution = Solution()
 height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
 result = solution.maxArea(height)
 print(result)
+
